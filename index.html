@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore.lk - See Sri Lanka Differently</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/preloader/Explore.lk Logo.png" alt="Logo" class="preloader-logo" />
+  </div>
+  <script>
+    /* Disable right-click */
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable copy */
+    document.addEventListener("copy", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable paste */
+    document.addEventListener("paste", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable text selection */
+    document.addEventListener("selectstart", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable image dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    });
+
+    /* Disable link dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "A") {
+            e.preventDefault();
+        }
+    });
+
+    /* Ensure default cursor on all elements and pointer cursor on clickable elements */
+    document.addEventListener("mouseover", function(e) {
+        if (["A", "BUTTON", "IMG", "INPUT", "I"].includes(e.target.tagName)) {
+            e.target.style.cursor = "pointer";
+        } else {
+            e.target.style.cursor = "default";
+        }
+    });
+   </script>
+
+
+<!-- Header -->
+<header class="shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2">
+        <div class="logo-wrapper position-relative">
+          <a href="index.html">
+            <img src="assets/img/logos/logo-light.png" alt="Logo" class="nav-logo light-logo">
+            <img src="assets/img/logos/logo-dark.png" alt="Logo" class="nav-logo dark-logo">
+          </a>
+          
+          
+        </div>
+          <a href="index.html">
+          <h1 class="site-title text-primary fw-bold m-0">Explore.lk</h1>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+           <li class="nav-item">
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about.us</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#guide" class="nav-link">Guide</a>
+            </li>
+          <li class="nav-link">
+              <a href="login.html" class="btn btn-primary rounded-pill px-2">Sign in</a>
+            </li>
+          <div id="navbarProfile"></div> <!-- Add this line -->
+          <img src="assets/img/profile/profile.png" alt="Profile" class="profile-icon" id="profileIcon" title="Profile" onclick="toggleProfileMenu()" style="display: none;"  >
+          </div>
+          
+           
+          <div class="header-actions">
+          <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle" title="Toggle dark mode">
+            <i class="bi bi-moon-fill" id="darkIcon"></i>
+          </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <section class="carousel-section" data-aos="fade-up">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span></span></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><span></span></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><span></span></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"><span></span></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"><span></span></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel/Anuradhapura.webp" class="d-block w-100" alt="Anuradhapura" />
+          <div class="carousel-caption text-start text-md-start text-center">
+            <h5>Anuradhapura – Ancient City of Kings</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel/Arugam Bay.webp" class="d-block w-100" alt="Arugam Bay" />
+          <div class="carousel-caption text-start text-md-start text-center">
+            <h5>Arugam Bay – Surfing Paradise</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel/Ella.webp" class="d-block w-100" alt="Ella" />
+          <div class="carousel-caption text-start text-md-start text-center">
+            <h5>Ella – Scenic Hill Country Escape</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel/Kandy.webp" class="d-block w-100" alt="Kandy" />
+          <div class="carousel-caption text-start text-md-start text-center">
+            <h5>Kandy – Heart of Sri Lankan Culture</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel/Sigiriya.webp" class="d-block w-100" alt="Sigiriya" />
+          <div class="carousel-caption text-start text-md-start text-center">
+            <h5>Sigiriya – Fortress in the Sky</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Featured Tours -->
+  <section id="tours" class="tours-section container py-5" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="section-title">Top Destinations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/gallery/sigiriya-459197_1280.jpg" class="card-img-top" alt="Sigiriya" />
+          <div class="card-body">
+            <h5 class="card-title text-primary">Sigiriya</h5>
+            <p class="card-text">Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka.</p>
+            <div class="text-warning mb-2">★★★★☆ <small class="text-muted">(21K ratings)</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/gallery/kandy.jpg" class="card-img-top" alt="Kandy" />
+          <div class="card-body">
+            <h5 class="card-title text-primary">Kandy</h5>
+            <p class="card-text">Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest.</p>
+            <div class="text-warning mb-2">★★★★★ <small class="text-muted">(30K ratings)</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/gallery/Galle_fort.webp" class="card-img-top" alt="Galle Fort" />
+          <div class="card-body">
+            <h5 class="card-title text-primary">Galle Fort</h5>
+            <p class="card-text">Galle Fort, in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified by the Dutch during the 17th century from 1649 onwards.</p>
+            <div class="text-warning mb-2">★★★★☆ <small class="text-muted">(20K ratings)</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Guide -->
+  <section id="guide" class="guide-section container py-5" data-aos="fade-up" data-aos-delay="200">
+    <div class="container">
+      <h2 class="section-title">Destination Guide</h2>
+      <p class="lead text-center mb-4">
+        Sri Lanka is a meeting place of friendly faces who share their homes and trade; a space for spiritual healing; a land for learning from the old and the new; a hub of commercial activity; a spot for tranquility.
+      </p>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2 animate-arrow">
+          Find out more <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container py-5" data-aos="fade-up" data-aos-delay="300">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Q1: Is it safe to travel to Sri Lanka?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">Generally, Sri Lanka is considered safe for tourists. However, it's always advisable to check current travel advisories from your government before your trip.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Q2: What is the best time to visit Sri Lanka?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">Sri Lanka has two distinct monsoon seasons. The best time to visit the west and south coasts and the hill country is from December to March. For the east coast, the best time is from April/May to September.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Q3: What currency is used in Sri Lanka?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">The currency used in Sri Lanka is the Sri Lankan Rupee (LKR).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Explore.lk. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollToTopBtn">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore.lk - See Sri Lanka Differently</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/preloader/Explore.lk Logo.png" alt="Logo" class="preloader-logo" />
+  </div>
+  <script>
+    /* Disable right-click */
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable copy */
+    document.addEventListener("copy", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable paste */
+    document.addEventListener("paste", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable text selection */
+    document.addEventListener("selectstart", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable image dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    });
+
+    /* Disable link dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "A") {
+            e.preventDefault();
+        }
+    });
+
+    /* Ensure default cursor on all elements and pointer cursor on clickable elements */
+    document.addEventListener("mouseover", function(e) {
+        if (["A", "BUTTON", "IMG", "INPUT", "I"].includes(e.target.tagName)) {
+            e.target.style.cursor = "pointer";
+        } else {
+            e.target.style.cursor = "default";
+        }
+    });
+   </script>
+
+
+<!-- Header -->
+<header class="shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2">
+        <div class="logo-wrapper position-relative">
+          <a href="index.html">
+            <img src="assets/img/logos/logo-light.png" alt="Logo" class="nav-logo light-logo">
+            <img src="assets/img/logos/logo-dark.png" alt="Logo" class="nav-logo dark-logo">
+          </a>
+          
+          
+        </div>
+          <a href="index.html">
+          <h1 class="site-title text-primary fw-bold m-0">Explore.lk</h1>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+           <li class="nav-item">
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about.us</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#guide" class="nav-link">Guide</a>
+            </li>
+          <li class="nav-link">
+              <a href="login.html" class="btn btn-primary rounded-pill px-2">Sign in</a>
+            </li>
+            
+          <div class="header-actions">
+          <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle" title="Toggle dark mode">
+            <i class="bi bi-moon-fill" id="darkIcon"></i>
+          </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Sri Lanka in Pictures</h2>
+      
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="Nature">Natural Wonders</button>
+        <button class="gallery-filter-btn" data-filter="Historical">Historical & Cultural</button>
+        <button class="gallery-filter-btn" data-filter="Beaches">Beaches & Coastal Beauty</button>
+        <button class="gallery-filter-btn" data-filter="Wildlife">Wildlife & Adventure</button>
+      </div>
+      
+      <div class="gallery-grid">
+<!-- Nature Images -->
+        <div class="gallery-item" data-category="Nature">
+          <img src="assets/img/gallery page/ella.jpg" alt="Ella – Hill Country Escape">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Ella – Hill Country Escape</h3>
+            <p class="gallery-description">Ella, a charming town in Sri Lanka’s central highlands,is known for its stunning views, cool climate, and lush greenery. Surrounded by tea plantations, waterfalls, and misty mountains, Ella offers a perfect mix of adventure and relaxation.</div>
+        </div>
+        
+        <div class="gallery-item" data-category="Nature">
+          <img src="assets/img/gallery page/Nuwara-Eliya-Sri-Lanka-ezgif.com-resize.jpg" alt="Nuwara Eliya – Little England of Sri Lanka">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Nuwara Eliya</h3>
+            <p class="gallery-description">Nuwara Eliya, nestled in the central highlands,is famed for its cool climate, colonial architecture, and picturesque landscapes. Often called “Little England,” this charming town is surrounded by rolling tea plantations, misty mountains, and lush gardens.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Nature">
+          <img src="assets/img/gallery page/Hortan plains.jpg" alt="Horton Plains National Park – Nature at Its Peak">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Horton Plains National Park</h3>
+            <p class="gallery-description">Horton Plains National Park, located in Sri Lanka’s central highlands, is a misty, windswept plateau known for its breathtaking natural beauty and ecological importance. The park’s most iconic feature is World’s End.</p>
+          </div>
+        </div>
+        
+        <!-- Historical and cultural Images -->
+        <div class="gallery-item" data-category="Historical">
+          <img src="assets/img/gallery page/Anuradhapura.jpg" alt="Anuradhapura">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Anuradhapura</h3>
+            <p class="gallery-description">One of the oldest continuously inhabited cities in the world, Anuradhapura is home to ancient stupas, royal palaces, and sacred Bodhi trees. It was the first capital of Sri Lanka and a center of Theravada Buddhism.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Historical">
+          <img src="assets/img/gallery page/Polonnaruwa.jpg" alt="Polonnaruwa">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Polonnaruwa</h3>
+            <p class="gallery-description">This medieval capital features remarkably preserved ruins of palaces, temples, and statues. The Gal Vihara rock carvings are a highlight, showcasing the island’s finest stonework from the 12th century.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Historical">
+          <img src="assets/img/gallery page/Kandy.jpg" alt="Kandy">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Kandy</h3>
+            <p class="gallery-description">Nestled in the hills, Kandy is Sri Lanka’s cultural capital. It's home to the Temple of the Sacred Tooth Relic (Sri Dalada Maligawa) — one of the most revered Buddhist pilgrimage sites. The city also hosts the famous Esala Perahera, a grand cultural procession.</p>
+          </div>
+        </div>
+        
+<!-- Beach Images -->
+        <div class="gallery-item" data-category="Beaches">
+          <img src="assets/img/gallery page/mirissa.jpg" alt="Mirissa – Beach Bliss & Whale Watching
+">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Mirissa – Beach Bliss & Whale Watching</h3>
+            <p class="gallery-description">Mirissa, a vibrant coastal town in southern Sri Lanka, is famous for its golden beaches, turquoise waters, and relaxed atmosphere. It's one of the best spots in the world for whale and dolphin watching.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Beaches">
+          <img src="assets/img/gallery page/Unawatuna.jpg" alt="Unawatuna – Coastal Charm & Coral Reefs">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Unawatuna – Coastal Charm & Coral Reefs</h3>
+            <p class="gallery-description">Unawatuna, located just south of Galle,is a popular beach destination known for its calm waters,coral reefs, and laid-back vibe. The golden sandy beach is ideal for swimming, snorkeling, and relaxing under palm trees.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Beaches">
+          <img src="assets/img/gallery page/Trincomalee.jpg" alt="Trincomalee – Serenity by the Sea
+">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Trincomalee – Serenity by the Sea </h3>
+            <p class="gallery-description">Trincomalee, on Sri Lanka’s northeastern coast, is known for its pristine beaches,crystal-clear waters, and rich cultural history.Nilaveli and Uppuveli beaches offer peaceful settings for swimming, snorkeling, and diving.</p>
+          </div>
+        </div>
+        
+        <!-- Wildlife Images -->
+        <div class="gallery-item" data-category="Wildlife">
+          <img src="assets/img/gallery page/Yala.jpg" alt="Yala National Park">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Yala National Park</h3>
+            <p class="gallery-description">Sri Lanka’s most famous wildlife park, Yala is known for its high density of leopards. Visitors can also spot elephants, sloth bears, crocodiles, and hundreds of bird species on a thrilling safari.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Wildlife">
+          <img src="assets/img/gallery page/Udawalawe.webp" alt="Udawalawe safari">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Udawalawe Safari</h3>
+            <p class="gallery-description">Ideal for elephant lovers, Udawalawe is one of the best places in Asia to see wild elephants up close. The park also offers views of buffalo, deer, jackals, and diverse birdlife.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="Wildlife">
+          <img src="assets/img/gallery page/Pinnawala.jpg" alt="Pinnawal">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Pinnawala Elephant Orphanage</h3>
+            <p class="gallery-description">Located along the Maha Oya River, this sanctuary cares for orphaned and injured elephants. Visitors can watch the gentle giants bathe, feed them, and learn about elephant conservation efforts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Explore.lk. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollToTopBtn">↑</button>
+
+ 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

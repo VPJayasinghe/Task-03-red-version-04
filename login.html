@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore.lk - See Sri Lanka Differently</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/preloader/Explore.lk Logo.png" alt="Logo" class="preloader-logo" />
+  </div>
+  <script>
+    /* Disable right-click */
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable copy */
+    document.addEventListener("copy", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable paste */
+    document.addEventListener("paste", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable text selection */
+    document.addEventListener("selectstart", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable image dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    });
+
+    /* Disable link dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "A") {
+            e.preventDefault();
+        }
+    });
+
+    /* Ensure default cursor on all elements and pointer cursor on clickable elements */
+    document.addEventListener("mouseover", function(e) {
+        if (["A", "BUTTON", "IMG", "INPUT", "I"].includes(e.target.tagName)) {
+            e.target.style.cursor = "pointer";
+        } else {
+            e.target.style.cursor = "default";
+        }
+    });
+   </script>
+   
+<!-- Header -->
+<header class="shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2">
+        <div class="logo-wrapper position-relative">
+          <a href="index.html">
+            <img src="assets/img/logos/logo-light.png" alt="Logo" class="nav-logo light-logo">
+            <img src="assets/img/logos/logo-dark.png" alt="Logo" class="nav-logo dark-logo">
+          </a>
+          
+          
+        </div>
+          <a href="index.html">
+          <h1 class="site-title text-primary fw-bold m-0">Explore.lk</h1>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+           <li class="nav-item">
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about.us</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#guide" class="nav-link">Guide</a>
+            </li>
+          <li class="nav-link">
+              <a href="login.html" class="btn btn-primary rounded-pill px-2">Sign in</a>
+            </li>
+            
+            <li class="nav-item" id="navbarProfile"></li> <!-- Add this line -->
+          <div class="header-actions">
+          <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle" title="Toggle dark mode">
+            <i class="bi bi-moon-fill" id="darkIcon"></i>
+          </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Sign Up Form Section -->
+  <main class="signup-container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="signup-card p-4 shadow-lg rounded-3">
+      
+      
+      <!-- Login Image / Caption -->
+      <div class="logo-wrapper position-relative d-flex justify-content-center align-items-center flex-column">
+          <img src="assets/img/logos/logo-light.png" alt="Logo" class="nav-logo light-logo">
+          <img src="assets/img/logos/logo-dark.png" alt="Logo" class="nav-logo dark-logo">
+        <div class="image-caption fw-bold">Discover the Wonders of Sri Lanka</div>
+        <div class="image-caption fw">Experience breathtaking landscapes and rich cultural heritage</div>
+      </div>
+
+      <!-- Login Form -->
+      <div class="login-form">
+        <h2 class="login-title mb-3 text-center">Welcome Back</h2>
+        <p class="login-title mb-2 text-center">Sign in to continue your Sri Lankan journey</p>
+
+        <form id="loginForm">
+          <div class="mb-3">
+            <input type="text" id="username" name="username" class="form-control" placeholder="Email or Username" required>
+          </div>
+          <div class="mb-3 position-relative">
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+            <span class="toggle-password position-absolute top-50 end-0 translate-middle-y me-3" id="togglePassword">
+              <i class="bi bi-eye"></i>
+            </span>
+          </div>
+          <div class="mb-3 text-end">
+            <a href="#" class="text-decoration-none">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 mb-2">Sign In</button>
+          <button type="button" class="btn btn-secondary w-100 mb-3" id="skipButton">Continue as Guest</button>
+
+          <div class="text-center mb-3">or continue with</div>
+          <div class="d-flex justify-content-center gap-2 mb-3">
+            <button type="button" class="btn btn-outline-danger"><i class="bi bi-google"></i></button>
+            <button type="button" class="btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
+            <button type="button" class="btn btn-outline-dark"><i class="bi bi-apple"></i></button>
+          </div>
+
+          <div class="text-center">
+            Don't have an account? <a href="signup.html">Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Preloader -->
+
+ 
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Explore.lk. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollToTopBtn">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+  
+  
+  
+</body>
+</html>
+    

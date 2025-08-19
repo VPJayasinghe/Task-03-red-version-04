@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore.lk - See Sri Lanka Differently</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/preloader/Explore.lk Logo.png" alt="Logo" class="preloader-logo" />
+  </div>
+  <script>
+    /* Disable right-click */
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable copy */
+    document.addEventListener("copy", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable paste */
+    document.addEventListener("paste", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable text selection */
+    document.addEventListener("selectstart", function(e) {
+        e.preventDefault();
+    });
+
+    /* Disable image dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    });
+
+    /* Disable link dragging */
+    document.addEventListener("dragstart", function(e) {
+        if (e.target.tagName === "A") {
+            e.preventDefault();
+        }
+    });
+
+    /* Ensure default cursor on all elements and pointer cursor on clickable elements */
+    document.addEventListener("mouseover", function(e) {
+        if (["A", "BUTTON", "IMG", "INPUT", "I"].includes(e.target.tagName)) {
+            e.target.style.cursor = "pointer";
+        } else {
+            e.target.style.cursor = "default";
+        }
+    });
+   </script>
+
+
+<!-- Header -->
+<header class="shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2">
+        <div class="logo-wrapper position-relative">
+          <a href="index.html">
+            <img src="assets/img/logos/logo-light.png" alt="Logo" class="nav-logo light-logo">
+            <img src="assets/img/logos/logo-dark.png" alt="Logo" class="nav-logo dark-logo">
+          </a>
+          
+          
+        </div>
+          <a href="index.html">
+          <h1 class="site-title text-primary fw-bold m-0">Explore.lk</h1>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+           <li class="nav-item">
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about.us</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#guide" class="nav-link">Guide</a>
+            </li>
+          <li class="nav-link">
+              <a href="login.html" class="btn btn-primary rounded-pill px-2">Sign in</a>
+            </li>
+            
+          <div class="header-actions">
+          <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle" title="Toggle dark mode">
+            <i class="bi bi-moon-fill" id="darkIcon"></i>
+          </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="text-center">
+       <section class="container py-5">
+  <h2 class="text-center mb-4">About Us</h2>
+  <p>
+    Explore.lk is the result of a collaborative group project developed by ten passionate undergraduate students from NSBM Green University, as part of our academic coursework in the Web Technologies module. Our goal with this website is to present a dynamic and visually engaging platform that allows users to discover the diverse beauty, heritage, and cultural richness of Sri Lanka in a fresh and modern way.
+  </p>
+
+  <p>
+    As a team, we come from different backgrounds and specializations, but we united under a shared passion for technology, design, and creativity. Each member brought unique skills to the table — from UI/UX design, front-end and back-end development, to content creation, project planning, and user experience optimization. This diversity allowed us to collaborate effectively, divide responsibilities smartly, and approach the project from multiple perspectives.
+  </p>
+
+  <p>
+    Explore.lk was designed to be both informative and visually appealing. Users can browse through breathtaking images in the gallery, discover popular and lesser-known tourist spots, read curated descriptions, and navigate the site with ease thanks to smooth transitions and responsive design. Special features such as dark mode, scroll animations, interactive carousels, and smooth scroll-to-top buttons were all implemented with the user experience in mind.
+  </p>
+
+  <p>
+    This website not only showcases the landmarks and beauty of Sri Lanka, but it also represents our commitment to quality, teamwork, and continuous learning. Throughout the development process, we worked in agile cycles, constantly testing, reviewing, and improving features. We gained hands-on experience with HTML, CSS, JavaScript, Bootstrap, and libraries like AOS for animation, while also applying version control through Git and collaborative tools to manage our workflow.
+  </p>
+
+  <p>
+    Beyond the technical achievements, this project helped us grow professionally. We learned how to communicate better as a team, handle constructive feedback, troubleshoot issues under pressure, and meet deadlines effectively — all essential skills for our future careers in the IT and tech industry.
+  </p>
+
+  <p>
+    As students of NSBM Green University, we are proud to present Explore.lk as a reflection of what young developers can achieve through collaboration, dedication, and creativity. While this project marks one milestone in our academic journey, it also serves as a stepping stone towards building more innovative digital solutions in the future. We hope this platform inspires locals and foreigners alike to explore the wonders of Sri Lanka — and see it differently.
+  </p>
+
+  <p class="text-center mt-4 fw-bold">
+    — Team Explore.lk
+  </p>
+</section>
+
+      <h2 class="mb-4">About Our Company</h2>
+      <p class="lead">
+        Explore.lk is your gateway to discovering the most stunning and hidden gems of Sri Lanka.
+        We're a passionate team of travelers and techies who believe the island's natural beauty,
+        cultural heritage, and local wonders deserve to be shared with the world!
+      </p>
+      <p>
+        Whether you're a local adventurer or a curious tourist, Explore.lk helps you plan your
+        journey with curated content, visuals, and real-time experiences. Let’s make exploring easy,
+        fun, and unforgettable.
+      </p>
+    </div>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4">
+    <p class="mb-0">&copy; 2025 Explore.lk. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollToTopBtn">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
